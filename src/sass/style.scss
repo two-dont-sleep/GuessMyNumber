@@ -1,0 +1,97 @@
+@import "variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Press Start 2P", sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+body {
+    position: relative;
+    color: #eee;
+    background-color: var(--main-color);
+}
+
+.button {
+    &:hover {
+        background-color: #ccc;
+    }
+
+    text-align: center;
+    border: transparent;
+    background-color: #eee;
+    color: #222;
+    font-size: 20px;
+    padding: 20px 30px;
+    cursor: pointer;
+
+    &_check {
+        margin: 0 auto;
+    }
+}
+
+.header {
+    padding: 1rem;
+    position: relative;
+    border-bottom: 5px #eee solid;
+    min-height: 35vh;
+
+    &_top {
+        justify-content: space-between;
+    }
+}
+
+.title {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.guess {
+    &_number {
+        position: absolute;
+        line-height: 100px;
+        width: 100px;
+        aspect-ratio: 1;
+        background-color: #eee;
+        font-size: 50px;
+        text-align: center;
+        margin: 0 auto;
+        color: black;
+        bottom: -50px;
+        left: calc(50% - 50px);
+    }
+
+    &_wrapper {
+        justify-content: center;
+        gap: 5rem;
+        margin-top: 100px;
+    }
+
+    &_input {
+        flex-direction: column;
+    }
+
+    &_window {
+        text-align: center;
+        font-size: 50px;
+        padding: 25px;
+        width: 250px;
+        margin: 0 auto 1.5rem;
+        background-color: transparent;
+        border: 4px solid #eee;
+        color: #eeeeee;
+    }
+
+    &_message {
+        margin-bottom: 5rem;
+    }
+
+    &_score {
+        margin-bottom: 1.25rem;
+    }
+}
